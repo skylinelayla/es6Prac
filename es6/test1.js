@@ -87,3 +87,8 @@ const items = ['Widget', 'Gadget'];
 const price = [9.95, 22.95];
 const cart1 = items.map((x, i) => ({ name: x, price: price[i] }));
 console.log(cart1)
+
+//reduce 方法 两个参数：第一个是针对数组项的操作，第二个是初始值 从0开始对数组元素相加
+const array = [5, 4, 6, 7];
+const sum = array.reduce((a, x) => a += x, 0);
+console.log(sum);
